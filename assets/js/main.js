@@ -1,13 +1,15 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-(function() {
-  "use strict";
+
+
+
+
+(function () {
+    "use strict";
+
+
+
+
+
 
   /**
    * Header toggle
@@ -242,3 +244,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+
+
+
+
+
+
+
+//document.getElementById('signInBtn').addEventListener('click', () => {
+//    const provider = new firebase.auth.GoogleAuthProvider();
+//    auth.signInWithPopup(provider)
+//        .then((result) => {
+//            console.log('User signed in:', result.user);
+//            enableEditing(); 
+//        })
+//        .catch((error) => {
+//            console.error('Error signing in:', error);
+//        });
+//});
+
