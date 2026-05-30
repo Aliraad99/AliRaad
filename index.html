@@ -1,16 +1,12 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Ali J. Raad Portfolio</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <meta name="google-signin-client_id" content="941766089500-56s152l7b25hnf7p5sj3kbvnptv5csf9.apps.googleusercontent.com"/>
+    <title>Ali Raad - Backend Engineer & DevOps Specialist</title>
+    <meta content="DevOps Engineer & Backend Developer specializing in cloud infrastructure, system administration, and scalable backend systems" name="description">
+    <meta content="DevOps, Backend, Python, .NET, Docker, AWS, Linux, FastAPI" name="keywords">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -19,7 +15,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,691 +31,567 @@
 
 <body class="index-page">
 
-    <header id="header" class="header d-flex flex-column justify-content-center">
-
-        <i class="header-toggle d-xl-none bi bi-list"></i>
-
+    <header id="header" class="header">
         <nav id="navmenu" class="navmenu">
-
-            
             <ul>
+                <li><a href="#hero" class="active"><i class="bi bi-house"></i><span>Home</span></a></li>
+                <li><a href="#about"><i class="bi bi-person"></i><span>About</span></a></li>
+                <li><a href="#skills"><i class="bi bi-gear"></i><span>Skills</span></a></li>
+                <li><a href="#experience"><i class="bi bi-briefcase"></i><span>Experience</span></a></li>
+                <li><a href="#projects"><i class="bi bi-code-square"></i><span>Projects</span></a></li>
+                <li><a href="#contact"><i class="bi bi-envelope"></i><span>Contact</span></a></li>
                 <li>
-                    <a id="signInBtn" href="#" role="button" data-toggle="modal" data-target="#signInModal">
-                        <i class="bi bi-person-raised-hand navicon"></i>
-                        <span>I'm Ali</span>
-                    </a>
-                </li>
-
-
-                <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-                <li><a href="#about"><i class="bi bi-person navicon"></i><span>About me</span></a></li>
-                <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-                <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Certifications</span></a></li>
-                <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Projects</span></a></li>
-                <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact me</span></a></li>
-                <li>
-                    <a href="assets/AliRaadCV.pdf" download="AliRaad_CV.pdf">
-                        <i class="bi bi-file-earmark-arrow-down navicon"></i>
-                        <span>Download CV</span>
+                    <a href="assets/AliRaadCV.pdf" download="AliRaad_CV.pdf" class="btn-cv">
+                        <i class="bi bi-download"></i><span>Download CV</span>
                     </a>
                 </li>
             </ul>
-
-
         </nav>
-
     </header>
 
     <main class="main">
 
-        
-        <section id="hero" class="hero section light-background">
-
-            <img src="assets/img/BlackSea.jpg" alt="">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-background">
+                <div class="gradient-blob blob-1"></div>
+                <div class="gradient-blob blob-2"></div>
+            </div>
             
-            <div class="container" data-aos="zoom-out">
-
-
-               
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <h2>Ali Raad</h2>
-                        <p>I'm <span class="typed" data-typed-items="Web Developer, DevOps Engineer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-                        <div class="social-links">
-                            <a href="https://github.com/Aliraad99" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://www.linkedin.com/in/ali-raad-713331240" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <div class="container-fluid hero-content px-4 px-lg-5" data-aos="fade-up">
+                <div class="row align-items-center justify-content-center min-vh-100">
+                    <div class="col-12 col-lg-11 text-center">
+                        <!-- <div class="hero-badge mb-4" data-aos="zoom-in">
+                            <span>👋 Welcome to my portfolio</span>
+                        </div> -->
+                        <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">
+                            Building Scalable Infrastructure & Reliable Systems
+                        </h1>
+                        <p class="hero-subtitle mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <span class="typed" data-typed-items="Backend Engineer, DevOps Specialist, System Administrator, Cloud Infrastructure Architect"></span><span class="typed-cursor" aria-hidden="true"></span>
+                        </p>
+                        <p class="hero-description mb-5" data-aos="fade-up" data-aos-delay="300">
+                            With 2+ years of hands-on experience in infrastructure management, I specialize in designing and deploying cloud solutions, optimizing system performance, and building robust backend systems using FastAPI, .NET Core, and modern DevOps practices.
+                        </p>
+                        <div class="hero-cta d-flex gap-3 justify-content-center mb-5" data-aos="fade-up" data-aos-delay="400">
+                            <a href="#contact" class="btn btn-primary btn-lg">
+                                <i class="bi bi-chat-dots"></i> Let's Talk
+                            </a>
+                            <a href="assets/AliRaadCV.pdf" download="AliRaad_CV.pdf" class="btn btn-outline-primary btn-lg">
+                                <i class="bi bi-download"></i> Download CV
+                            </a>
+                        </div>
+                        <div class="social-links d-flex justify-content-center gap-4" data-aos="fade-up" data-aos-delay="500">
+                            <a href="https://github.com/Aliraad99" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ali-raad-713331240" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="mailto:aliraad0961@gmail.com" class="social-link" aria-label="Email">
+                                <i class="bi bi-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
+<!-- 
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+                <span>Scroll to explore</span>
+                <i class="bi bi-chevron-down"></i>
+            </div> -->
         </section><!-- /Hero Section -->
-
-
 
         <!-- About Section -->
         <section id="about" class="about section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>About Me</h2>
-                <p>Develop experiences that make the digital world more accessible and engaging.</p>
-            
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4 justify-content-center">
-                    <div class="col-lg-4">
-                        <img id="office" src="assets/img/office.jpg" class="img-fluid" alt="profile photo">
-                    </div>
-                    <div class="col-lg-8 content">
-                        <h2>Junior Web Developer &amp System Administrator.</h2>
-                        <p class="fst-italic py-3">
-                         </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>16 Nov 1999</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>aliraad99.github.io/AliRaad/</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+00961-76096537</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Beirut, Lebanon</span></li>
-                                </ul>
+            <div class="container-fluid px-4 px-lg-5" data-aos="fade-up">
+                <div class="row gap-5 align-items-center">
+                    <!-- <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="assets/img/office.jpg" class="img-fluid rounded-4 shadow" alt="Ali Raad">
+                    </div> -->
+                    <div class="col-12 col-lg-9 col-xl-8" data-aos="fade-up" data-aos-delay="200">
+                        <div class="section-title mb-4">
+                            <h2>About Me</h2>
+                            <div class="title-underline"></div>
+                        </div>
+                        <h3 class="mb-3">System Administrator & Backend Engineer</h3>
+                        <p class="mb-4 lead">
+                            Computer Science graduate with 2+ years of hands-on experience in DevOps Engineering, infrastructure management, and backend development. Passionate about designing scalable systems, optimizing performance, and automating operational workflows.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="bi bi-lightning-charge"></i>
+                                <div>
+                                    <h5>2+ Years Experience</h5>
+                                    <p>DevOps, System Admin & Backend Development</p>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor Degree'</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Domain:</strong> <span>Computer Science</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>aliraad@gmail.com</span></li>
-                                    
-                                </ul>
+                            <div class="highlight-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <div>
+                                    <h5>Beirut, Lebanon</h5>
+                                    <p>Based in Middle East, Global Availability</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-chat-dots"></i>
+                                <div>
+                                    <h5>Languages</h5>
+                                    <p>Fluent in English & Arabic</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-mortarboard"></i>
+                                <div>
+                                    <h5>Education</h5>
+                                    <p>B.S. Computer Science (BAU 2022)</p>
+                                </div>
                             </div>
                         </div>
-               
+
+                        <!-- <div class="contact-info mt-5">
+                            <p><strong>Email:</strong> <a href="mailto:aliraad0961@gmail.com">aliraad0961@gmail.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:+96176096537">+961 76 096 537</a></p>
+                        </div> -->
                     </div>
                 </div>
-
             </div>
-
         </section><!-- /About Section -->
+
         <!-- Skills Section -->
         <section id="skills" class="skills section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Skills</h2>
-                <p>Key Responsibilities and Skills</p>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-                
-                <div class="row skills-content skills-animation">
-
-                    <d iv class="col-lg-6">
-                        <h3>Programming Languages</h3>
-                        <div class="progress">
-                            <span class="skill"><span>JAVA</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>C#</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>HTML, CSS</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>Python, BASH</span> <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>JavaScript (jQuery, AJAX)</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <!-- End Skills Item -->
-
-                    </d>
-
-                    <div class="col-lg-6">
-                        <h3>Frameworks</h3>
-                   
-
-                        <div class="progress">
-                            <span class="skill"><span>ASP.Net Core</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>Entity Framework</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>Bootsrap</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-
-                        </div>
-
-                        <hr />
-                    <div class="row skills-content skills-animation">
-
-                        
-                        <div class="col-lg-6">
-                            <h3>Database Management</h3>
-                        <div class="progress">
-                            <span class="skill"><span>SQL</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>Airtable, Lark Base</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <h3>Infrastructure Management</h3>
-
-                        <div class="progress">
-                            <span class="skill"><span>Operating System (Windows, Unix)</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                            <div class="progress">
-                                <span class="skill"><span>Mikrotic Router Management</span> <i class="val">90%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div><!-- End Skills Item -->
-
-
-
-                        </div>
-                        <hr />
-
-                    </div>
-
-                    <div class="row skills-content skills-animation">
-
-                        
-                        <div class="container" data-aos="fade-up" data-aos-delay="100">
-                            <div class="skills-category">
-                                <h3 style="display: flex;
-                                            justify-content: center;">
-                                    Tools</h3>
-                                <div class="row skills-content skills-animation">
-                                    <!-- Tool Item -->
-                                    <div class="col-lg-2 col-md-3 col-sm-4 tool-item">
-                                        <div class="tool-icon" data-logo="assets/img/Logos/microsoft.jpg">
-                                            <span class="tool-text">Microsoft Office</span>
-                                        </div>
-                                        
-                                    </div>
-                                   
-                                    <!-- Tool Item -->
-                                    <div class="col-lg-2 col-md-3 col-sm-4 tool-item">
-                                        <div class="tool-icon" data-logo="assets/img/Logos/Visual.png">
-                                            <span class="tool-text">Visual Studio</span>
-                                        </div>
-                                    </div>
-                               
-                                    <!-- Tool Item -->
-                                    <div class="col-lg-2 col-md-3 col-sm-4 tool-item">
-                                        <div class="tool-icon" data-logo="assets/img/Logos/sqlserverlogo.png">
-                                            <span  class="tool-text">Microsoft SQL Server</span>
-                                        </div>
-                                    </div>
-                                    <!-- Tool Item -->
-                                    <div class="col-lg-2 col-md-3 col-sm-4 tool-item">
-                                        <div class="tool-icon" data-logo="assets/img/Logos/winBox.png">
-                                            <span class ="tool-text">WinBox</span>
-                                        </div>
-                                    </div>
-                                    <!-- Tool Item -->
-                                    <div class="col-lg-2 col-md-3 col-sm-4 tool-item">
-                                        <div class="tool-icon" data-logo="assets/img/Logos/Xshell.png">
-                                            <span class="tool-text">XSHELL</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-2 col-md-3 col-sm-4 tool-item">
-                                        <div class="tool-icon" data-logo="assets/img/Logos/grafana.png">
-                                            <span class="tool-text">Grafana</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="section-title text-center mb-5" data-aos="fade-up">
+                    <h2>Technical Skills</h2>
+                    <div class="title-underline mx-auto"></div>
+                    <p>Expertise in modern DevOps, backend development, and cloud infrastructure</p>
                 </div>
 
-            </div>
+                <div class="row g-4">
+                    <!-- Backend Development -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="bi bi-code-square"></i>
+                                <h4>Backend Development</h4>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">.NET Core</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">Entity Framework</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- DevOps & Cloud -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="bi bi-cloud"></i>
+                                <h4>Cloud & DevOps</h4>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Docker Swarm</span>
+                                <span class="skill-tag">AWS (EC2, S3)</span>
+                                <span class="skill-tag">LXD</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Systemd</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linux & Infrastructure -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="bi bi-server"></i>
+                                <h4>Linux & Infrastructure</h4>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Ubuntu Administration</span>
+                                <span class="skill-tag">Nginx/Apache</span>
+                                <span class="skill-tag">SSH & Security</span>
+                                <span class="skill-tag">Bash Scripting</span>
+                                <span class="skill-tag">Log Management</span>
+                                <span class="skill-tag">System Hardening</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monitoring & Analytics -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="bi bi-graph-up"></i>
+                                <h4>Monitoring & Analytics</h4>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Grafana</span>
+                                <span class="skill-tag">Prometheus</span>
+                                <span class="skill-tag">InfluxDB</span>
+                                <span class="skill-tag">Telegraf</span>
+                                <span class="skill-tag">Performance Analysis</span>
+                                <span class="skill-tag">Alerting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Management -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="bi bi-database"></i>
+                                <h4>Database Management</h4>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">SQL Server</span>
+                                <span class="skill-tag">Stored Procedures</span>
+                                <span class="skill-tag">SQLAlchemy ORM</span>
+                                <span class="skill-tag">Airtable</span>
+                                <span class="skill-tag">Database Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Network & Security -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="bi bi-shield-lock"></i>
+                                <h4>Network & Security</h4>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Network Administration</span>
+                                <span class="skill-tag">Firewalls</span>
+                                <span class="skill-tag">VPNs</span>
+                                <span class="skill-tag">Routers & Switches</span>
+                                <span class="skill-tag">Incident Response</span>
+                                <span class="skill-tag">Root Cause Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Streaming -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="bi bi-camera-video"></i>
+                                <h4>Live Streaming Infrastructure</h4>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">FFMPEG</span>
+                                <span class="skill-tag">HLS Streaming</span>
+                                <span class="skill-tag">Nimble WMS</span>
+                                <span class="skill-tag">VOD/OTT Delivery</span>
+                                <span class="skill-tag">Stream Monitoring</span>
+                                <span class="skill-tag">RPS Platform</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Soft Skills -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="bi bi-tools"></i>
+                                <h4>Tools & Soft Skills</h4>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">GitHub Copilot</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Communication</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Teamwork</span>
+                                <span class="skill-tag">Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section><!-- /Skills Section -->
-      
-        
-        
-        
-        
-        <!-- Resume Section -->
-        <section id="resume" class="resume section">
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Resume</h2>
-                <p>
-                    Experienced Computer Science graduate with 2 years in DevOps Engineering, specializing in infrastructure management and network troubleshooting. Skilled in various programming languages, frameworks, and tools, with certification in .Net Core from a leading software provider.
-                </p>
-            </div><!-- End Section Title -->
-
-            
-            
-            <div class="container">
-
-                <div class="row">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                        
-                        <div class="resume-item">
-                            <h4>Web Developer - .Net Core</h4>
-                            <h5>2024 Integrated Digital Systems LB</h5>
-
-                            <ul>
-                                <li>
-                                    <details>
-                                        <summary>SQL Server and Database Management</summary>
-                                        <ul>
-                                            <li>Utilized SQL Server for database management, including creating stored procedures and optimizing complex queries for efficient data retrieval.</li>
-                                        </ul>
-                                    </details>
-                                </li>
-
-                                <li>
-                                    <details>
-                                        <summary>Frontend Development</summary>
-                                        <ul>
-                                            <li>Built frontend webpages and added interactions to webpages using JavaScript, AJAX, jQuery, and responsive design principles.</li>
-                                        </ul>
-                                    </details>
-                                </li>
-
-                                <li>
-                                    <details>
-                                        <summary>Full Website Development</summary>
-                                        <ul>
-                                            <li>Developed a full website using Visual Studio, ASP.NET/MVC, C#.NET, and Entity Framework Core.</li>
-                                        </ul>
-                                    </details>
-                                </li>
-
-                                <li>
-                                    <details>
-                                        <summary>Web API Development</summary>
-                                        <ul>
-                                            <li>Developed Web APIs (.NET Core) to be used along the website.</li>
-                                        </ul>
-                                    </details>
-                                </li>
-                            </ul>
-                        </div><!-- End Resume Item -->
-
-                        <div class="resume-item">
-                            <h4>DevOps Engineer</h4>
-                            <h5>2022 - 2024 Next Solutions PY</h5>
-                            <ul>
-                                <li>
-                                    <details>
-                                        <summary>Operating System</summary>
-                                        <ul>
-                                            <li>Ubuntu System Management: Expert in managing Ubuntu servers, including installation, configuration, and troubleshooting.</li>
-
-                                            <li>Proficient in log collection, configuration file editing, and storage management.</li>
-
-                                            <li>Command Line Proficiency: Skilled in using Ubuntu command-line tools, including systemd commands, for managing file systems, directories, files, and system resources.</li>
-                                            <li>Secure Remote Access: Proficient in utilizing SSH protocol and jump servers to ensure secure remote system access and management.</li>
-                                            <li>Automation with Bash Scripting: Developed and deployed Bash scripts to automate routine administrative tasks, significantly enhancing the efficiency of Linux server operations.</li>
-                                            <li>Monitoring & Performance Management: Implemented and maintained infrastructure monitoring systems using Grafana, Telegraf, Zabbix, and InfluxDB.</li>
-
-                                            <li>Monitored key metrics such as CPU, memory, processes, and network performance.</li>
-
-                                            <li>Web Server Configuration: Introduced and managed Apache and Nginx web server setups, optimizing reliable content delivery.</li>
-                                        </ul>
-                                    </details>
-                                </li>
-
-                                <li>
-                                    <details>
-                                        <summary>Network Infrastructure and Cloud Management</summary>
-                                        <ul>
-                                            <li>Cloud Infrastructure: Introduced to AWS and OVH for cloud management and deployment.</li>
-                                            <li>Database Development: Designed relational databases using MS SQL Server and managed data with cloud-based tools like Lark Base and Airtable.</li>
-
-                                            <li>Enabled real-time collaboration, data tracking, and automated task management.</li>
-
-                                            <li>Network Administration: Managed network infrastructure including routers, switches, firewalls, and VPNs to optimize performance, reliability, and security.</li>
-                                            <li>Incident Management & Root Cause Analysis: Delivered high-level incident management, conducting root cause analysis, and implementing recovery plans.</li>
-
-                                            <li>Kept stakeholders informed of resolution status.</li>
-
-                                        </ul>
-                                    </details>
-                                </li>
-
-                                <li>
-                                    <details>
-                                        <summary>System Administration and Stream Management</summary>
-                                        <ul>
-                                            <li>System Administration: Managed streaming services using various platforms including RPS, Nimble (WMS Panel), and AMS.</li>
-                                            <li>Stream Manager: Oversaw stream setups by adding, configuring, and managing streams.</li>
-
-                                            <li>Ensured seamless VOD and live streaming delivery across OTT platforms.</li>
-
-                                        </ul>
-                                    </details>
-                                </li>
-                            </ul>
-                        </div><!-- End Resume Item -->
-                       
-
-
-
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="resume-item">
-                            <h4>Bachelor of Computer Science</h4>
-                            <h5>2019 - 2022</h5>
-                            <p><em>Beirut Arab University </em>BAU</p>
-                           
-                        </div>
-
-
-                         <div class="resume-item">
-                            <h4>Soft Skills</h4>
-                            
-                            <p><em>Gained from professional and life experience.</em></p>
-                           
-                        </div>
-
-
-                    </div>
-                   
-
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="section-title text-center mb-5" data-aos="fade-up">
+                    <h2>Professional Experience</h2>
+                    <div class="title-underline mx-auto"></div>
+                    <p>Journey through my career in DevOps and backend development</p>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                    </div>
-                </div>
-
-
-
-            </div>
-
-        </section><!-- /Resume Section -->
-
-
-
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio section">
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Certifications</h2>
-                <p>My certifications</p>
-            </div><!-- End Section Title -->
-
-            <div class="container">
-                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-bachelor">Bachelor CS</li>
-                        <li data-filter=".filter-ic3">IC3 Certification</li>
-                        <li data-filter=".filter-internship">Internships</li>
-                    </ul><!-- End Portfolio Filters -->
-
-                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                        <!-- Bachelor CS Certification -->
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bachelor">
-                            <img src="assets/img/degree1.jpg" class="img-fluid" alt="Bachelor CS">
-                            <div class="portfolio-info">
-                                <h4>Bachelor CS</h4>
-                                <p>Computer Science Degree</p>
-                                <a href="assets/img/degree1.jpg" title="Bachelor CS" download class="glightbox preview-link">
-                                    <i class="bi bi-zoom-in"></i>
-                                </a>
-                                <a href="assets/img/degree1.jpg" title="Download" download class="details-link">
-                                    <i class="bi bi-download"></i>
-                                </a>
+                    <div class="col-12 col-xl-10 mx-auto">
+                        <!-- NEXT SOLUTION -->
+                        <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="experience-header">
+                                <div>
+                                    <h4>DevOps Engineer & System Administrator</h4>
+                                    <span class="company">NEXT SOLUTION</span>
+                                </div>
+                                <span class="date">July 2022 – Present</span>
                             </div>
-                        </div><!-- End Portfolio Item -->
-                        <!-- IC3 Certification -->
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ic3">
-                            <img src="assets/img/ic3.jpg" class="img-fluid" alt="IC3 Certification">
-                            <div class="portfolio-info">
-                                <h4>IC3 Certification</h4>
-                                <p>Internet and Computing Core Certification</p>
-                                <a href="assets/img/ic3.jpg" title="IC3 Certification" download class="glightbox preview-link">
-                                    <i class="bi bi-zoom-in"></i>
-                                </a>
-                                <a href="assets/img/ic3.jpg" title="Download" download class="details-link">
-                                    <i class="bi bi-download"></i>
-                                </a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-                        <!-- Internship Certification -->
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-internship">
-                            <img src="assets/img/internship.jpg" class="img-fluid" alt="Internship Certification">
-                            <div class="portfolio-info">
-                                <h4>Internship</h4>
-                                <p>Internship Certificate</p>
-                                <a href="assets/img/internship.jpg" title="Internship" download class="glightbox preview-link">
-                                    <i class="bi bi-zoom-in"></i>
-                                </a>
-                                <a href="assets/img/internship.jpg" title="Download" download class="details-link">
-                                    <i class="bi bi-download"></i>
-                                </a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                    </div><!-- End Portfolio Container -->
-
-                </div>
-            </div>
-        </section><!-- /Portfolio Section -->
-        <!-- /Portfolio Section -->
-
-
-
-        <!-- Services Section -->
-        <section id="services" class="services section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Projects</h2>
-                <p>Web Development Projects.</p>
-            </div><!-- End Section Title -->
-
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item item-cyan position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                                </svg>
-                                <i class="bi bi-calendar3-range"></i>
-                            </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Activity Club Portal</h3>
-                            </a>
-                            <p>Designed and implemented two interconnected portals—Back Office (admin) and Public Site (user-facing) using ASP.NET Core.  .</p>
+                            <p class="experience-subtitle mb-3">
+                                Leading infrastructure management and DevOps operations for a live streaming and VOD platform serving enterprise clients.
+                            </p>
+                            <ul class="experience-list">
+                                <li>Managed Ubuntu physical servers, OVH dedicated servers/VPS, and AWS infrastructure (EC2, S3)</li>
+                                <li>Implemented comprehensive monitoring system using Grafana, Prometheus, Telegraf, and InfluxDB with real-time alerting</li>
+                                <li>Configured and maintained Nginx web server for high-availability content delivery with security optimization</li>
+                                <li>Orchestrated containerized environments using Docker, Docker Swarm, and LXD for microservices deployment</li>
+                                <li>Designed and developed Python-based automation tools and internal bots to reduce repetitive tasks by 40%+</li>
+                                <li>Administered database infrastructure (MS SQL Server, MySQL) with performance optimization and backup strategies</li>
+                                <li>Led network infrastructure management (routers, switches, firewalls, VPNs) ensuring optimal performance and security</li>
+                                <li>Developed FastAPI backend system for stream monitoring, source management, and operational analytics</li>
+                                <li>Managed live streaming and VOD delivery using RPS, Nimble (WMS Panel), and AMS platforms</li>
+                                <li><strong>Key Achievement:</strong> Reduced inspection time from 1+ hours to under 20 minutes using nsmanager functionalities</li>
+                            </ul>
                         </div>
-                    </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item item-orange position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                                </svg>
-                                <i class="bi bi-ticket"></i>
+                        <!-- IDS Internship -->
+                        <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="experience-header">
+                                <div>
+                                    <h4>Backend Developer - ASP.NET Core Internship</h4>
+                                    <span class="company">IDS (Integrated Digital Systems)</span>
+                                </div>
+                                <span class="date">Nov 2023 – Feb 2024</span>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Support Ticketing System</h3>
-                            </a>
-                            <p>
-                                Created a ticketing system using ASP.NET Core with a focus on continual learning and updates.
-                                Employed HTML, CSS, JavaScript, jQuery, AJAX, and Bootstrap for the front end.
-                                Implemented stored procedures for efficient database operations and performance.
-                                
+                            <p class="experience-subtitle mb-3">
+                                Full-stack development internship focused on .NET Core and database optimization.
+                            </p>
+                            <ul class="experience-list">
+                                <li>Developed full-stack web applications using ASP.NET Core MVC and Entity Framework Core</li>
+                                <li>Optimized complex SQL queries and created stored procedures for SQL Server database</li>
+                                <li>Built interactive, responsive frontends with JavaScript, AJAX, jQuery, and Bootstrap</li>
+                                <li>Created RESTful Web APIs (.NET Core 5.0/6.0/7.0) for seamless integration</li>
+                                <li>Collaborated with team using Git version control for coordinated development</li>
+                            </ul>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="experience-header">
+                                <div>
+                                    <h4>Bachelor of Science in Computer Science</h4>
+                                    <span class="company">Beirut Arab University (BAU)</span>
+                                </div>
+                                <span class="date">2019 – 2022</span>
+                            </div>
+                            <p class="experience-subtitle mb-0">
+                                Comprehensive education in computer science fundamentals, algorithms, and software engineering principles.
                             </p>
                         </div>
-                    </div><!-- End Service Item -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Experience Section -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item item-teal position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                                </svg>
-                                <i class="bi bi-eye"></i>
-                            </div>
-                            <a href="#" class="stretched-link">
-                                <h3>NSEYE</h3>
-                            </a>
-                            <p>Monitoring System to monitor infrastructure(DC, servers, network equipment, weather..).</p>
-                        </div>
-                    </div><!-- End Service Item -->
-
-
-
-                    </div><!-- End Service Item --> 
-
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="section-title text-center mb-5" data-aos="fade-up">
+                    <h2>Featured Projects</h2>
+                    <div class="title-underline mx-auto"></div>
+                    <p>Showcasing my expertise in backend development and DevOps</p>
                 </div>
 
-            </div>
-
-        </section><!-- /Services Section -->
-        
-        
-        
-        
-        
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Contact me</h2>
-                <p>Available</p>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade" data-aos-delay="100">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-4">
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                            <i class="bi bi-geo-alt flex-shrink-0"></i>
-                            <div>
-                                <h3>Address</h3>
-                                <p>Beirut, Lebanon</p>
+                <div class="row g-4">
+                    <!-- NsManager Project -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="bi bi-graph-up"></i>
                             </div>
-                        </div><!-- End Info Item -->
-
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div>
-                                <h3>Call me</h3>
-                                <p>+961 76096537</p>
+                            <h3>NsManager</h3>
+                            <p class="project-year">2025</p>
+                            <p class="project-description">
+                                Advanced FastAPI-based backend system for HLS stream monitoring, source management, and operational reporting. Real-time dashboard with comprehensive analytics.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SQLAlchemy</span>
+                                <span class="tech-tag">FFmpeg</span>
+                                <span class="tech-tag">Jinja2</span>
+                                <span class="tech-tag">Alembic</span>
                             </div>
-                        </div><!-- End Info Item -->
-
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-envelope flex-shrink-0"></i>
-                            <div>
-                                <h3>Email me</h3>
-                                <p>aliraad0961@gmail.com</p>
-                            </div>
-                        </div><!-- End Info Item -->
-
+                            <p class="project-features mt-3">
+                                <strong>Features:</strong>
+                                <ul>
+                                    <li>RESTful API endpoints for authentication and stream management</li>
+                                    <li>FFmpeg/ffprobe integration for media stream analysis</li>
+                                    <li>Real-time monitoring dashboard with Jinja2 templates</li>
+                                    <li>Automated deployment with Bash scripts and Systemd</li>
+                                    <li>Robust logging and comprehensive unit/integration tests</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
 
+                    <!-- Ticketing System Project -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="bi bi-ticket"></i>
+                            </div>
+                            <h3>Ticketing System</h3>
+                            <p class="project-year">2024</p>
+                            <p class="project-description">
+                                Full-featured ticketing system built with ASP.NET Core, emphasizing continuous learning and modern best practices in backend development.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Entity Framework</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">AJAX</span>
+                            </div>
+                            <p class="project-features mt-3">
+                                <strong>Features:</strong>
+                                <ul>
+                                    <li>Efficient database operations using stored procedures</li>
+                                    <li>Dynamic UI with JavaScript and AJAX for seamless interactions</li>
+                                    <li>Responsive design with Bootstrap framework</li>
+                                    <li>Performance-optimized queries and indexing</li>
+                                    <li>Continuous integration and deployment practices</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
 
+                    <!-- Activity Club Portal -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3>Activity Club Portal</h3>
+                            <p class="project-year">2023</p>
+                            <p class="project-description">
+                                Dual-portal system designed for activity management with separate back-office admin interface and public-facing user platform using ASP.NET Core.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">Entity Framework</span>
+                            </div>
+                            <p class="project-features mt-3">
+                                <strong>Features:</strong>
+                                <ul>
+                                    <li>Back Office portal for administrators with role-based access control</li>
+                                    <li>Public-facing user interface for activity browsing and management</li>
+                                    <li>Unit of Work pattern for robust data management</li>
+                                    <li>Dynamic and responsive web interfaces</li>
+                                    <li>Seamless data operations with Entity Framework Core</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
 
+                    <!-- Certifications -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h3>Certifications & Education</h3>
+                            <p class="project-year">2021 – 2023</p>
+                            <p class="project-description">
+                                Professional certifications demonstrating expertise in digital literacy and full-stack development.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">IC3 GS5</span>
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">Web Development</span>
+                            </div>
+                            <p class="project-features mt-3">
+                                <strong>Credentials:</strong>
+                                <ul>
+                                    <li>IC3 GS5 Digital Literacy Program (2021)</li>
+                                    <li>.NET Core Internship Certificate (2023)</li>
+                                    <li>B.S. Computer Science, Beirut Arab University (2022)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Projects Section -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="section-title text-center mb-5" data-aos="fade-up">
+                    <h2>Let's Work Together</h2>
+                    <div class="title-underline mx-auto"></div>
+                    <p>Have a project in mind? Let's discuss how I can help</p>
                 </div>
 
-            </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:aliraad0961@gmail.com">aliraad0961@gmail.com</a></p>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+96176096537">+961 76 096 537</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <h4>Location</h4>
+                            <p>Beirut, Lebanon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12 col-xl-10 mx-auto text-center" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="mb-4">Connect With Me</h3>
+                        <div class="social-links-large d-flex justify-content-center gap-4">
+                            <a href="https://github.com/Aliraad99" target="_blank" rel="noopener noreferrer" class="social-link-large" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ali-raad-713331240" target="_blank" rel="noopener noreferrer" class="social-link-large" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:aliraad0961@gmail.com" class="social-link-large" aria-label="Email">
+                                <i class="bi bi-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section><!-- /Contact Section -->
 
     </main>
-
-
-
-
-
-    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signInModalLabel">Are you sure you're Ali?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row gy-4">
-                        <div class="col-md-12 text-center">
-                            <button type="button" class="g-signin2" id="googleSignInBtn" data-onsuccess="onSignIn"></button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -727,17 +599,11 @@
     <!-- Preloader -->
     <div id="preloader"></div>
 
-
-
-
-
-    <!-- jQuery (one instance) -->
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Bootstrap JS (one instance) -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -753,15 +619,6 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
 
-
-
-    <!--Google Platform Library-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-
-
-  
 </body>
-
 
 </html>
