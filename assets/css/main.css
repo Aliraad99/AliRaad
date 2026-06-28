@@ -267,6 +267,20 @@ body {
   bottom: 0;
   z-index: -1;
   overflow: hidden;
+  background-image: url('../img/hero-bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: heroBackgroundZoom 24s ease-in-out infinite;
+}
+
+.hero-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(15, 98, 254, 0.18), transparent 25%),
+              radial-gradient(circle at bottom right, rgba(6, 182, 212, 0.12), transparent 22%);
+  pointer-events: none;
 }
 
 .gradient-blob {
@@ -299,6 +313,16 @@ body {
   0%, 100% { transform: translate(0, 0) scale(1); }
   33% { transform: translate(30px, -50px) scale(1.1); }
   66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes heroBackgroundZoom {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes sectionDepth {
+  0%, 100% { transform: scale(1.02); }
+  50% { transform: scale(1.03); }
 }
 
 .hero-content {
@@ -444,6 +468,39 @@ body {
 .section {
   padding: var(--spacing-3xl) 0;
   position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: radial-gradient(circle at 10% 20%, rgba(15, 98, 254, 0.18), transparent 24%),
+              radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.12), transparent 20%),
+              linear-gradient(180deg, rgba(7, 11, 30, 0.1), rgba(7, 11, 30, 0.45));
+  pointer-events: none;
+  transform: scale(1.02);
+  animation: sectionDepth 18s ease-in-out infinite;
+}
+
+.section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(7, 11, 30, 0.14), rgba(7, 11, 30, 0.75));
+  pointer-events: none;
+}
+
+.section:not(#hero) .container-fluid {
+  position: relative;
+  z-index: 1;
+  background: rgba(7, 10, 24, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  backdrop-filter: blur(16px);
+  padding: var(--spacing-3xl) var(--spacing-lg);
 }
 
 .section-title {
@@ -921,6 +978,34 @@ body {
 
 .social-link-large i {
   font-size: 1.8rem;
+}
+
+/* ============================================================
+   WHATSAPP FLOATING BUTTON
+   ============================================================ */
+
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: var(--white);
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(18, 140, 126, 0.35);
+  z-index: 99;
+  font-size: 1.6rem;
+  transition: all var(--transition-smooth);
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(18, 140, 126, 0.45);
+  color: var(--white);
 }
 
 /* ============================================================
