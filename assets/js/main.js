@@ -13,22 +13,24 @@
   const headerToggle = document.querySelector('.header-toggle');
   const navmenu = document.querySelector('.navmenu');
 
-  if (headerToggle) {
+  if (headerToggle && navmenu) {
     headerToggle.addEventListener('click', () => {
-      navmenu.classList.toggle('active');
-      headerToggle.classList.toggle('bi-list');
-      headerToggle.classList.toggle('bi-x');
+      const isOpen = navmenu.classList.toggle('active');
+      headerToggle.classList.toggle('bi-list', !isOpen);
+      headerToggle.classList.toggle('bi-x', isOpen);
+      headerToggle.setAttribute('aria-expanded', String(isOpen));
     });
   }
 
   // Close menu when clicking on a nav link
   document.querySelectorAll('.navmenu a').forEach(link => {
     link.addEventListener('click', () => {
-      if (navmenu.classList.contains('active')) {
+      if (navmenu?.classList.contains('active')) {
         navmenu.classList.remove('active');
         if (headerToggle) {
           headerToggle.classList.add('bi-list');
           headerToggle.classList.remove('bi-x');
+          headerToggle.setAttribute('aria-expanded', 'false');
         }
       }
     });
@@ -373,11 +375,12 @@
 
   // Add keyboard navigation support
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && navmenu.classList.contains('active')) {
+    if (e.key === 'Escape' && navmenu?.classList.contains('active')) {
       navmenu.classList.remove('active');
       if (headerToggle) {
         headerToggle.classList.add('bi-list');
         headerToggle.classList.remove('bi-x');
+        headerToggle.setAttribute('aria-expanded', 'false');
       }
     }
   });

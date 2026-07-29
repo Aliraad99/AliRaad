@@ -680,6 +680,106 @@ body {
   transform: translateY(-2px);
 }
 
+.tool-card {
+  background: rgba(15, 98, 254, 0.03);
+  border: 1px solid rgba(15, 98, 254, 0.2);
+  border-radius: 1rem;
+  padding: var(--spacing-2xl);
+  transition: all var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.tool-card:hover {
+  background: rgba(15, 98, 254, 0.1);
+  border-color: rgba(15, 98, 254, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(15, 98, 254, 0.2);
+}
+
+.tool-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  background: rgba(6, 182, 212, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.tool-body h4 {
+  color: var(--white);
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.tool-body p {
+  margin: 0;
+  color: var(--gray-300);
+  font-size: 0.95rem;
+}
+
+.tool-git {
+  background-image: url("../logo/git.jpg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tool-vscode {
+  background-image: url("../logo/vscode.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tool-vs {
+  background-image: url("../logo/visualstudio.jfif");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tool-mssql {
+  background-image: url("../logo/sql.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tool-docker {
+  background-image: url("../logo/docker.jfif");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tool-terminus {
+  background-image: url("../logo/termius.jfif");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tool-wireshark {
+  background-image: url("../logo/Wireshark.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tool-winbox {
+  background-image: url("../logo/winbox.jfif");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* ============================================================
    EXPERIENCE SECTION
    ============================================================ */
